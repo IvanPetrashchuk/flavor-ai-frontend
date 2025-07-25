@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# FlavorAI Frontend
 
-## Getting Started
+Цей репозиторій містить вихідний код для фронтенд-частини застосунку FlavorAI. 
+Фронтенд розроблений за допомогою **Next.js**, забезпечуючи швидкий та інтерактивний користувацький
+ інтерфейс для взаємодії з функціоналом бекенду.
 
-First, run the development server:
+## Створено та працює
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Ключові технології та фреймворки:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+* **Next.js**: Для серверного рендерингу (SSR), статичної генерації (SSG) та маршрутизації.
+* **React**: Як основна бібліотека для побудови інтерфейсу користувача.
+* **Redux Toolkit**: Для ефективного управління станом програми.
+* **Tailwind CSS**: Для швидкої та гнучкої стилізації компонентів.
+* **Zod**: Для валідації схем даних (наприклад, форм).
+* **React Hook Form**: Для зручної роботи з формами.
+* **Axios**: Для виконання HTTP-запитів до API.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Реалізований функціонал:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+* **Автентифікація користувачів**:
+    * **Вхід (Login)**: Користувачі можуть увійти в систему за допомогою email та пароля. Реалізовано збереження JWT-токену в `sessionStorage` для підтримки сесії.
+    * **Вихід (Logout)**: Функціонал для безпечного виходу з облікового запису та очищення токена.
+* **Валідація форм**: Забезпечено надійну валідацію форм входу за допомогою Zod та React Hook Form, покращуючи користувацький досвід та запобігаючи некоректному введенню даних.
+* **Глобальні сповіщення (Alerts)**: Інтегрована система сповіщень для відображення успішних операцій або помилок користувачеві.
 
-## Learn More
+### Інші особливості:
 
-To learn more about Next.js, take a look at the following resources:
+* **Зручна структура проекту**: Код організовано в логічні компоненти та slices Redux для легкості підтримки та масштабування.
+* **Адаптивний дизайн**: Інтерфейс адаптований для різних розмірів екранів, забезпечуючи коректне відображення на мобільних пристроях та десктопах.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Запуск проекту
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Для запуску фронтенду на вашій локальній машині:
 
-## Deploy on Vercel
+1.  **Клонуйте репозиторій:**
+    `git clone <URL_ВАШОГО_РЕПОЗИТОРІЮ_ФРОНТЕНДУ>`
+    `cd flavor-ai-frontend` (або відповідна назва вашої директорії)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2.  **Встановіть залежності:**
+    `npm install` 
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3.  **Запустіть застосунок у режимі розробки:**
+    `npm run custom-dev` 
+
+Фронтенд буде доступний за адресою `http://localhost:3001` (або іншим портом, якщо 3001 зайнятий). Переконайтеся, що ваш бекенд також запущений та доступний за налаштованими API URL-ами.
+
+<p align="center">
+  <img src="https://drive.google.com/uc?export=view&id=1cSRIRg1Ib21oKyORT93HDJAy2x_Is3o5" width="40%"/>
+  <img src="https://drive.google.com/uc?export=view&id=1hCXuw4qkXcHJJJxsvd9XgnruG-pIru_D" width="40%"/>
+</p>
