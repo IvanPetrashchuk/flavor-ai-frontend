@@ -46,6 +46,6 @@
 Фронтенд буде доступний за адресою `http://localhost:3001` (або іншим портом, якщо 3001 зайнятий). Переконайтеся, що ваш бекенд також запущений та доступний за налаштованими API URL-ами.
 
 <p align="center">
-  <img src="https://drive.google.com/uc?export=view&id=1cSRIRg1Ib21oKyORT93HDJAy2x_Is3o5" width="40%"/>
-  <img src="https://drive.google.com/uc?export=view&id=1hCXuw4qkXcHJJJxsvd9XgnruG-pIru_D" width="40%"/>
+  <img src="https://drive.google.com/uc?export=view&id=1cSRIRg1Ib21oKyORT93HDJAy2x_Is3o5" width="60%"/>
+  <img src="https://drive.google.com/uc?export=view&id=1hCXuw4qkXcHJJJxsvd9XgnruG-pIru_D" width="60%"/>
 </p>
